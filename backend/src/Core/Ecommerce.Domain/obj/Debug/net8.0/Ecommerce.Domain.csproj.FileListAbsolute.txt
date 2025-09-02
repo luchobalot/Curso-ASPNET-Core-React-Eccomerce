@@ -6,6 +6,7 @@ C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.
 C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.0\Ecommerce.Domain.AssemblyInfoInputs.cache
 C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.0\Ecommerce.Domain.AssemblyInfo.cs
 C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.0\Ecommerce.Domain.csproj.CoreCompileInputs.cache
+C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.0\Ecommerce.Domain.sourcelink.json
 C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.0\Ecommerce.Domain.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.0\refint\Ecommerce.Domain.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Core\Ecommerce.Domain\obj\Debug\net8.0\Ecommerce.Domain.pdb

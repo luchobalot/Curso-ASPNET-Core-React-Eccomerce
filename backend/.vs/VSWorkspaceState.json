@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Core",
+    "\\src\\Core\\Ecommerce.Domain"
+  ],
+  "SelectedNode": "\\src\\Core\\Ecommerce.Domain\\OrderItem.cs",
+  "PreviewInSolutionExplorer": false
+}

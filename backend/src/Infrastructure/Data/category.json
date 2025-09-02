@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Accesorios"
+    },
+    {
+        "id": 2,
+        "nombre": "Camaras"
+    },
+    {
+        "id": 3,
+        "nombre": "Libros"
+    },
+    {
+        "id": 4,
+        "nombre": "Comida y Chef"
+    },
+    {
+        "id": 5,
+        "nombre": "Deportes"
+    },
+    {
+        "id": 6,
+        "nombre": "Ropa y Fashion"
+    },
+    {
+        "id": 7,
+        "nombre": "Casa y Decoracion"
+    },
+    {
+        "id": 8,
+        "nombre": "Computadoras"
+    },
+    {
+        "id": 9,
+        "nombre": "Dispositivos Electronicos"
+    }
+]

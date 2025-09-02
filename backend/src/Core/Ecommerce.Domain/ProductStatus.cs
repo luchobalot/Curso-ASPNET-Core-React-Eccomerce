@@ -2,10 +2,9 @@ using System.Runtime.Serialization;
 
 namespace Ecommerce.Domain;
 
-public enum ProductStatus
-{
+public enum ProductStatus {
+    [EnumMember(Value = "Producto Inactivo")]
+    Inactivo,
     [EnumMember(Value = "Producto Activo")]
-    Active,
-    [EnumMember(Value = "Producto Inactvo")]
-    Inactive
+    Activo
 }

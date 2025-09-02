@@ -1,7 +1,6 @@
 using System.Text;
 using Ecommerce.Domain;
 using Ecommerce.Infrastructure.Persistence;
-using Ecommerce.Persistence;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -79,5 +78,44 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    var logger = loggerFactory.CreateLogger<Program>();
+
+    try
+    {
+        var context = services.GetRequiredService<EcommerceDbContext>();
+        var usuarioManager = services.GetRequiredService<UserManager<Usuario>>();
+        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+        logger.LogInformation("Iniciando migración de base de datos...");
+        await context.Database.MigrateAsync();
+        logger.LogInformation("Migración completada exitosamente");
+
+        logger.LogInformation("Iniciando carga de datos iniciales...");
+        
+        // ✅ AWAIT agregado aquí - era el problema principal
+        await EcommerceDbContextData.LoadDataAsync(context, usuarioManager, roleManager, loggerFactory);
+        
+        logger.LogInformation("Datos iniciales cargados exitosamente");
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "Ocurrió un error durante la migración o carga de datos iniciales");
+        
+        // En desarrollo, mostrar el error completo
+        if (app.Environment.IsDevelopment())
+        {
+            logger.LogError("Detalles del error: {ErrorMessage}", ex.Message);
+            logger.LogError("Stack trace: {StackTrace}", ex.StackTrace);
+        }
+        
+        // No lanzar la excepción para permitir que la aplicación inicie
+        // throw; // Comentado para evitar que la app falle completamente
+    }
+}
 
 app.Run();

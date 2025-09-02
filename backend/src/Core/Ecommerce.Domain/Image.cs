@@ -7,7 +7,7 @@ public class Image : BaseDomainModel
 {
     [Column(TypeName = "nvarchar(4000)")]
     public string? Url { get; set; } = string.Empty;
-    public int ProductId { get; set; }
+    public Guid ProductId { get; set; }
     public virtual Product? Product { get; set; }
     public string? PublicCode { get; set; }
 }

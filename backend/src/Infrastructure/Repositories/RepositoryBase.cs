@@ -3,7 +3,7 @@ using Ecommerce.Application.Persistence;
 using Ecommerce.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce.Infrastructure.Repositories;
+namespace Ecommerce.Infrastructure.Persistence.Repositories;
 
 public class RepositoryBase<T> : IAsyncRepository<T> where T : class
 {
