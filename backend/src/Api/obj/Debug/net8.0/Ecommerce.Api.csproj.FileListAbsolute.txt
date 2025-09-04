@@ -11,6 +11,8 @@ C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\FluentEmail.Core.dll
+C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\FluentEmail.Smtp.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\SIAG28\Desktop\tienda\backend\src\Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

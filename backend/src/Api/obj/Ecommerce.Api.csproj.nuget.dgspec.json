@@ -32,6 +32,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\SIAG28\\Desktop\\tienda\\backend\\src\\Core\\Ecommerce.Application\\Ecommerce.Application.csproj": {
+                "projectPath": "C:\\Users\\SIAG28\\Desktop\\tienda\\backend\\src\\Core\\Ecommerce.Application\\Ecommerce.Application.csproj"
+              },
               "C:\\Users\\SIAG28\\Desktop\\tienda\\backend\\src\\Infrastructure\\Ecommerce.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\SIAG28\\Desktop\\tienda\\backend\\src\\Infrastructure\\Ecommerce.Infrastructure.csproj"
               }
@@ -146,11 +149,19 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[12.0.1, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "FluentEmail.Core": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "FluentEmail.Smtp": {
+              "target": "Package",
+              "version": "[3.0.2, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -164,9 +175,17 @@
               "target": "Package",
               "version": "[12.4.0, )"
             },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
               "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -311,6 +330,14 @@
             "CloudinaryDotNet": {
               "target": "Package",
               "version": "[1.24.0, )"
+            },
+            "FluentEmail.Core": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "FluentEmail.Smtp": {
+              "target": "Package",
+              "version": "[3.0.2, )"
             },
             "MailKit": {
               "target": "Package",

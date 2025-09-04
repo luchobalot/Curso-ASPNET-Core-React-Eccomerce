@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- ✅ AGREGAR REFERENCIA A APPLICATION -->
+    <ProjectReference Include="..\Core\Ecommerce.Application\Ecommerce.Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Ecommerce.Infrastructure.csproj" />
   </ItemGroup>
 

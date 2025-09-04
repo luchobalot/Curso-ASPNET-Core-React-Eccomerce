@@ -1,4 +1,5 @@
 using System.Text;
+using Ecommerce.Application; // ✅ AGREGAR ESTE USING
 using Ecommerce.Domain;
 using Ecommerce.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication;
@@ -12,13 +13,14 @@ using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// ✅ ORDEN CORRECTO: Primero Application, luego Infrastructure
+builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
 // Add services to the container
 builder.Services.AddDbContext<EcommerceDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"),
     b => b.MigrationsAssembly(typeof(EcommerceDbContext).Assembly.FullName)));
-
 
 builder.Services.AddControllers(opt => // Registra los controladores de tu API
     {

@@ -25,6 +25,10 @@
     <!-- Configuration -->
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
     
+    <!-- FluentEmail -->
+    <PackageReference Include="FluentEmail.Core" Version="3.0.2" />
+    <PackageReference Include="FluentEmail.Smtp" Version="3.0.2" />
+    
     <!-- JSON -->
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     
